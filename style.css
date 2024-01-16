@@ -942,7 +942,7 @@ margin: 50px 0px;
 
 
 /* responsive */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
   .body {
     overflow-x: hidden;
   }
