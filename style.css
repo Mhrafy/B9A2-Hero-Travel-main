@@ -755,6 +755,7 @@ border: none;
   margin: 0 auto;
   display: flex;
   gap: 25px;
+  margin-bottom: 20px;
 }
 
 
@@ -856,7 +857,7 @@ text-align: center;
   height: auto;
 
 background: rgba(19, 19, 24, 0.05);
-margin-top: 50px;
+padding: 20px 0px;
 display: flex;
 flex-direction: column;
 justify-content: start;
@@ -942,6 +943,10 @@ margin: 50px 0px;
 
 /* responsive */
 @media screen and (max-width: 576px) {
+  .body {
+    overflow-x: hidden;
+  }
+  
   .logo {
     font-size: 26px;
     margin: 0px 50px;
@@ -1173,6 +1178,7 @@ height: 52px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
   .newsletter {
     width: 375px;
