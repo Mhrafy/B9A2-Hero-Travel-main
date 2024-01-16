@@ -7,25 +7,36 @@
 }
 body,
 html {
+  
 
   max-width: 1440px;
   width: 100%;
   
   
-  overflow-x: hidden;
+  
   
 }
 /* heading start */
 nav {
   width: 80%;
   margin: 0 auto;
-  height: 100px;
+  height: 200px;
   background: #fff;
   /* border: 2px solid salmon; */
 }
-label.logo {
+.logo {
+  display: flex;
   color: #131318;
-  font-size: 36px;
+  
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  top: 70px;
+  margin-left: 20px;
+}
+
+.logo .logo-name {
+  font-size: 30px;
   font-weight: 800;
 }
 .extra {
@@ -67,6 +78,7 @@ a:hover {
   font-size: 30px;
   color: black;
   display: none;
+  margin-top: 60px;
 }
 #check {
   display: none;
@@ -781,6 +793,7 @@ width: 393px;
 height: 52px;
 margin: 10px 30px;
 border: none;
+color: #FFF;
 }
 .save-sub {
   width: 324px;
@@ -813,8 +826,8 @@ text-align: center;
 
 /* footer */
 .foot {
-  width: 1440px;
-height: 500px;
+  width: 100%;
+
 background: rgba(19, 19, 24, 0.05);
 margin-top: 50px;
 display: flex;
@@ -898,7 +911,7 @@ margin: 50px 0px;
 
 /* responsive */
 @media (max-width: 400px) {
-  label.logo {
+  .logo {
     font-size: 26px;
     margin: 0px 50px;
   }
@@ -961,6 +974,10 @@ margin: 50px 0px;
     gap: 16px;
     position: relative;
     bottom: 90px;
+  }
+  .elements .first, .two , .three , .four {
+    width: 255px;
+height: 52px;
   }
   .banner-description {
     font-size: 14px;
@@ -1119,6 +1136,8 @@ height: 52px;
   
     width: 288px;
     height: 52px;
+    color: #FFF;
 
   }
 }
+
