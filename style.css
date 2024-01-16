@@ -35,6 +35,10 @@ nav {
   top: 25px;
   margin-left: 20px;
 }
+.logo-name {
+  width: 201;
+  height: 41px;
+}
 
 .logo .logo-name {
   font-size: 30px;
@@ -73,8 +77,13 @@ nav ul li a {
 nav ul li a.active,
 a:hover {
   color: #ff5400;
+
 }
-#checkbtn {
+.togg {
+  float: right;
+  display: none;
+}
+/* #checkbtn {
   float: right;
   line-height: 80px;
   margin-right: 10px;
@@ -89,7 +98,7 @@ a:hover {
 }
 #check:checked ~ ul {
   left: 0;
-}
+} */
 /* heading end */
 
 /* banner start */
@@ -927,6 +936,10 @@ margin: 50px 0px;
 
 
 
+
+
+
+
 /* responsive */
 @media screen and (max-width: 576px) {
   .logo {
@@ -937,11 +950,15 @@ margin: 50px 0px;
   label.logo {
     margin: 0px 70px;
   }
-  #checkbtn {
+  
+
+  .togg {
     display: block;
-    bottom: 35px;
-    right: 20px;
-    
+    position: relative;
+    right: 40px ;
+    bottom: 20px;
+    font-size: 30px;
+
   }
   nav ul {
     width: 100%;
@@ -1212,265 +1229,3 @@ margin-top: 20px;
   width: 300px;
 }
 }
-/* medium screen */
-/* @media screen and (min-width:576px)  (max-width: 992px) {
-  label.logo {
-    margin: 0px 70px;
-  }
-  #checkbtn {
-    display: block;
-    bottom: 35px;
-    right: 20px;
-    
-  }
-  nav ul {
-    width: 100%;
-    height: 100vh;
-    background: #ff5400;
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    transition: 0.5s;
-    z-index: 1;
-  }
-  nav ul li a.active {
-    color: #424247;
-  }
-
-  nav ul li {
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    margin: 15px;
-  }
-  nav {
-    width: 100%;
-  }
-  .banner {
-    width: 80%;
-    width: 335px;
-    height: 483px;
-  }
-  .banner-title {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 800;
-    position: relative;
-    bottom: 50px;
-  }
-  .popular {
-    flex-direction: column;
-    width: 80%;
-  }
-  .popular-image {
-    width: 335px;
-    height: 342px;
-  }
-  .elements {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 287px;
-    gap: 16px;
-    position: relative;
-    bottom: 90px;
-  }
-  .elements .first, .two , .three , .four {
-    width: 255px;
-height: 52px;
-  }
-  .banner-description {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    width: 304px;
-    position: relative;
-    bottom: 60px;
-  }
-  .gellary-one,
-  .gellary-two,
-  .gellary-three {
-    flex-direction: column;
-    width: 80%;
-  }
-  .maldives,
-  .Indonesia,
-  .Srilanka,
-  .North-America,
-  .Kashmir,
-  .Bangladesh,
-  .Bandarban {
-    width: 335px;
-    height: 176px;
-    margin: 0 auto;
-    width: 95%;
-  }
-  .Kashmir {
-    background-repeat: no-repeat;
-    object-fit: fill;
-  }
-  .sarvices-one,
-  .sarvices-two {
-    flex-direction: column;
-  }
-  .sarvices-one .hotel,
-  .map,
-  .price {
-    width: 400px;
-    height: 289px;
-  }
-  .sarvices-one .sar-des {
-    width: 350px;
-    position: relative;
-    bottom: 30px;
-  }
-  .sarvices-one .sar-title {
-    position: relative;
-    bottom: 25px;
-  }
-
-  .sarvices-two .sar-des {
-    width: 350px;
-    position: relative;
-    bottom: 30px;
-  }
-  .sarvices-two .sar-title {
-    position: relative;
-    bottom: 25px;
-  }
-  .satorini-one,
-  .satorini-two,
-  .satorini-three {
-    width: 400px;
-    height: 500px;
-  }
-  .sub-box {
-    width: 303px;
-    height: 303px;
-    position: relative;
-    top: 70px;
-  }
-  .sub-box-two {
-    width: 303px;
-    height: 303px;
-    position: relative;
-    top: 70px;
-    right: 10px;
-  }
-  .small-text-one,
-  .small-text-two,
-  .small-text-three {
-    width: 20px;
-    margin-right: 50px;
-    position: relative;
-    bottom: 40px;
-    left: 20px;
-  }
-  .satorini-title {
-    width: 300px;
-    margin-right: 50px;
-    position: relative;
-    bottom: 40px;
-  }
-
-  .satorini-des {
-    width: 254px;
-    position: relative;
-    bottom: 50px;
-  }
-  .satorini-price {
-    font-size: 16px;
-    position: relative;
-    bottom: 60px;
-  }
-  .satorini-btn {
-    width: 130px;
-    height: 40px;
-    position: relative;
-    bottom: 60px;
-  }
-  .simple {
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto; 
-    
-    
-  }
-  .simple-title {
-    color: #131318;
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 60px; 
-  width: 348px;
-  }
-  .simple-des {
-    color: #5A5A5D;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px; 
-    width: 332px;
-  }
-
-
-  .news {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 250px;
-    flex-direction: column;
-  }
-  .newsletter {
-    width: 375px;
-    height: 429px;
-  }
-  .save {
-    width: 380px;
-    height: 300px;
-  }
-  .save-sub {
-    width: 214.023px;
-    height: 79.268px;
-    bottom: 29px;
-    
-    
-  }
-  .save-sub-title {
-  font-size: 14px;
-  font-weight: 400;
-  padding-top: 20px;
-  }
-  .save-sub-des {
-  font-size: 20px;
-  font-weight: 800;
-  }
-  .news-row {
-    width: 288px;
-    height: 1px;
-  }
-  .news-input input {
-    width: 288px;
-height: 52px;
-  
-  }
-  
-  .news-btn  button{
-  
-    width: 288px;
-    height: 52px;
-    color: #FFF;
-
-  }
-  
-.foot-des {
-  width: 269px;
-  color: #5A5A5D;
-text-align: center;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px; 
-margin-top: 20px;
-}
-.foot-row {
-  width: 300px;
-}
-}
- */
