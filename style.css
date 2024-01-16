@@ -13,7 +13,6 @@ html {
   width: 100%;
 
   margin: 0 auto;
-  overflow-x: hidden;
   
   
   
@@ -316,7 +315,6 @@ a:hover {
 }
 
 .Srilanka {
-  
   border-radius: 16px;
   background: linear-gradient(
       0deg,
@@ -347,6 +345,7 @@ a:hover {
     ),
     url(B9A2-Hero-Travel-main/Images/Rectangle\ 7.png),
     lightgray 50% / cover no-repeat;
+    background-size: cover;
   width: 474px;
   height: 286px;
   color: #fff;
@@ -369,7 +368,6 @@ a:hover {
     url(B9A2-Hero-Travel-main/Images/Rectangle\ 9.png),
     lightgray 50% / cover no-repeat;
   background-size: cover;
-  object-fit: fill;
   width: 274px;
   height: 286px;
   color: #fff;
@@ -704,7 +702,7 @@ border: none;
   width: 80%;
   
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 30px;
   gap: 25px;
 }
 
@@ -760,6 +758,7 @@ border: none;
   display: flex;
   gap: 25px;
   margin-bottom: 20px;
+  padding-top: 30px;
 }
 
 
@@ -1058,10 +1057,10 @@ height: 52px;
     height: 176px;
     margin: 0 auto;
     width: 95%;
-    
   }
-  
-    
+  .Kashmir {
+    background-repeat: no-repeat;
+    object-fit: fill;
   }
   .sarvices-one,
   .sarvices-two {
@@ -1178,7 +1177,7 @@ height: 52px;
   .news {
     width: 80%;
     margin: 0 auto;
-    margin-top: 50px;
+   
     flex-direction: column;
     justify-content: center;
     align-items: center;
