@@ -5,8 +5,7 @@
   font-family: calibri;
   font-family: "Mulish", sans-serif;
 }
-body,
-html {
+.container {
   
 
   max-width: 1440px;
